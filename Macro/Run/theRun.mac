@@ -1,0 +1,14 @@
+/FPR/event/modulo 10000
+
+/run/initialize
+
+/run/verbose 0
+/event/verbose 0
+/tracking/verbose 0
+
+/vis/ogl/set/displayListLimit 1500000
+
+/run/beamOn 1000000
+
+/vis/enable
+/vis/viewer/flush

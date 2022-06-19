@@ -1,0 +1,58 @@
+#
+# This file permits to customize, with commands,
+# the menu bar of the G4UIXm, G4UIQt, G4UIWin32 sessions.
+# It has no effect with G4UIterminal.
+#
+# File menu :
+/gui/addMenu file File
+/gui/addButton file Quit exit
+#
+# Run menu :
+/gui/addMenu run Run
+/gui/addButton run "beamOn 1" "/run/beamOn 1"
+/gui/addButton run "beamOn 1 verbose" "/control/execute Macro/Run/beamOn1.mac"
+/gui/addButton run "Test run" "/control/execute Macro/Run/testRun.mac"
+/gui/addButton run "Small run" "/control/execute Macro/Run/smallRun.mac"
+/gui/addButton run "Medium run" "/control/execute Macro/Run/mediumRun.mac"
+/gui/addButton run "Run" "/control/execute Macro/Run/run.mac"
+/gui/addButton run "Big run" "/control/execute Macro/Run/bigRun.mac"
+/gui/addButton run "The run" "/control/execute Macro/Run/theRun.mac"
+#
+# Viewer menu :
+/gui/addMenu viewer Viewer
+/gui/addButton viewer "Set style surface" "/vis/viewer/set/style surface"
+/gui/addButton viewer "Set style wireframe" "/vis/viewer/set/style wireframe"
+/gui/addButton viewer "Refresh viewer" "/vis/viewer/refresh"
+/gui/addButton viewer "Update viewer (interaction or end-of-file)" "/vis/viewer/update"
+/gui/addButton viewer "Flush viewer (= refresh + update)" "/vis/viewer/flush"
+/gui/addButton viewer "Update scene" "/vis/scene/notifyHandlers"
+/gui/addButton viewer "Enable" "/vis/enable"
+#
+# Detector menu :
+/gui/addMenu detectorMaterial DetectorMaterial
+/gui/addButton detectorMaterial "Set foil material" "/FPR/Detector/setFoilMaterial"
+/gui/addButton detectorMaterial "Foil gold" "/FPR/Detector/setFoilMaterial G4_Au"
+/gui/addButton detectorMaterial "Foil iron" "/FPR/Detector/setFoilMaterial G4_Fe"
+/gui/addButton detectorMaterial "Foil lead" "/FPR/Detector/setFoilMaterial G4_Pb"
+/gui/addButton detectorMaterial "Foil water" "/FPR/Detector/setFoilMaterial G4_WATER"
+/gui/addButton detectorMaterial "Foil graphite" "/FPR/Detector/setFoilMaterial G4_GRAPHITE"
+/gui/addButton detectorMaterial "Foil soft tissue" "/FPR/Detector/setFoilMaterial G4_TISSUE_SOFT_ICRP"
+/gui/addButton detectorMaterial "World air" "/FPR/Detector/setWorldAir"
+/gui/addButton detectorMaterial "World void" "/FPR/Detector/setWorldVoid"
+#
+# Event menu :
+/gui/addMenu event Event
+/gui/addButton event "Modulo 100" "/FPR/event/modulo 100"
+/gui/addButton event "Modulo 1000" "/FPR/event/modulo 1000"
+/gui/addButton event "Modulo 10000" "/FPR/event/modulo 10000"
+/gui/addButton event "Modulo 100000" "/FPR/event/modulo 100000"
+/gui/addButton event "Set modulo" "/FPR/event/modulo"
+#
+# Physics menu :
+/gui/addMenu physics Physics
+/gui/addButton physics "Modulo 100" "/FPR/event/modulo 100"
+/gui/addButton physics "Modulo 1000" "/FPR/event/modulo 1000"
+/gui/addButton physics "Modulo 10000" "/FPR/event/modulo 10000"
+/gui/addButton physics "Modulo 100000" "/FPR/event/modulo 100000"
+/gui/addButton physics "Set modulo" "/FPR/event/modulo"
+#

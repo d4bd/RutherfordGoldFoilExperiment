@@ -1,0 +1,11 @@
+/run/initialize
+
+/run/verbose 1
+/event/verbose 1
+/tracking/verbose 2
+/hits/verbose 2
+
+/run/beamOn 10
+
+/vis/enable
+/vis/viewer/flush
